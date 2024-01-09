@@ -9,6 +9,7 @@
  */
 export function formatDate(date: Date): string {
     // 請在此處寫下你的程式碼
+    return date.toISOString().split('T')[0];
 }
 
 /**

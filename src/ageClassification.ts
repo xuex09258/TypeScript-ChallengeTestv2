@@ -11,16 +11,16 @@
  * @returns - 回傳年齡的分類結果
  */
 export function classifyAge(age: number): string {
-    // 請在此處寫下你的程式碼
-    if (typeof age === 'number') {
-
-        if (age <=)
-    }
-    if (age < 0 || age > 100) {
-        return '請輸入合理範圍'
-    }
-    if (age >= 10) {
+    if (age < 0) {
+        return '請輸入合理範圍';
+    } else if (age <= 10) {
         return 'Child';
+    } else if (age <= 15) {
+        return 'Teenager';
+    } else if (age <= 30) {
+        return 'Adult';
+    } else {
+        return 'Senior';
     }
-    return ''
 }
+
