@@ -25,5 +25,11 @@ export enum BookCategory {
 
 export function getBookCategory(category: BookCategory): string {
   // 在此實現函式
-    return `Book category: ${category}`;
+    const categoryNames = {
+        [BookCategory.Novel]: "Novel",
+        [BookCategory.Poetry]: "Poetry",
+        [BookCategory.Biography]: "Biography",
+    };
+
+    return `Book category: ${categoryNames[category]}`;
 }

@@ -6,6 +6,8 @@
  */
 
 // 請在下方寫下你的程式碼
+import fetch from 'node-fetch';
+
 export async function fetchData(url: string): Promise<any> {
     try {
         const response = await fetch(url);
@@ -16,3 +18,4 @@ export async function fetchData(url: string): Promise<any> {
         throw error;
     }
 }
+

@@ -34,8 +34,10 @@ export function multiply(a: number, b: number): number {
  * @param b - 第二個數字
  */
 export function divide(a: number, b: number): number {
-    // 在此實現函式
-    return a/b;
+    if (b === 0) {
+        throw new Error("Cannot divide by zero");
+    }
+    return a / b;
 }
 
 /**
