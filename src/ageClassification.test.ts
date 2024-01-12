@@ -3,7 +3,7 @@ import { classifyAge } from './ageClassification';
 
 describe('年齡分類函式測試', () => {
     it('應將 12 歲以下分類為 Child', () => {
-        expect(classifyAge(13)).toBe('Child');
+        expect(classifyAge(10)).toBe('Child');
     });
 
     it('應將 13 至 17 歲分類為 Teenager', () => {
